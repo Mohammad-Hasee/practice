@@ -1,0 +1,352 @@
+@font-face {
+	font-family: themefisher;
+	src: url(../fonts/themefisher-font.ttf);
+}
+
+
+
+*{
+	box-sizing: border-box;
+	margin:0px;
+	padding: 0px;
+}
+
+
+body{
+    margin:0px;
+	padding: 0px;
+}
+.d-flex{
+    display:flex;
+}
+.container{
+	 width: 90%;
+	 margin: auto;
+}
+img{
+	max-width: 100%;
+	display: block;
+}
+a{
+	display: inline-block;
+	text-decoration: none;
+	color: #000000;
+}
+.p-t-b{
+	padding: 1.2rem 0px;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family:Catamaran, sans-serif;
+}
+/* nav css start */
+nav{
+    width:100%;
+	align-items:center;
+}
+
+.nav-logo{
+	flex: 1 1 20%;
+}
+.nav-logo img{
+	padding:30px 0px 30px 90px;
+}
+.nav-items{
+	flex: 1 1 60%;
+}	
+
+.nav-items ul{
+    justify-content: space-evenly;
+   
+}
+.nav-items ul li {
+   display:inline-block;
+   text-decoration: none;
+   
+}
+.nav-items ul li a{
+	text-decoration:none;
+	font-family:Catamaran, sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	color:#000000;
+	padding:10px 5px 5px 5px;
+	
+}
+
+.nav-icons{
+	flex:1 1 20%;
+	padding:5px;
+	text-align: center;
+	
+}
+
+.fa-magnifying-glass, .fa-user{
+	margin-right: 10px;
+	background-color:#F0F1F5;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	padding-top: 10px;
+}
+.fa-cart-shopping{
+	background-color:#F0F1F5;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	padding-top: 10px;
+}	
+
+/* nav css end */
+/* banner css start */
+.banner-logo{
+    width: 100%;
+	position: relative;
+}
+.banner-logo img{
+	width: 100%;
+	display: block;
+}
+.banner-content{
+	position: absolute;
+	top: 30%;
+	left: 60%;
+}
+.banner-content a{
+	background-color: red;
+	padding: 15px 30px;
+	transition: 0.5s linear;
+	margin-top: .5rem;
+}
+
+.banner-content a:hover{
+	background-color: black;
+	color: white;
+}
+.banner-content a::after{
+	content: '';
+	position:absolute;
+	padding: 23px 59px;
+	background: transparent;
+	border: 2px solid red;
+	top: 97px;
+	left: -5px;
+	transition: 0.5s linear;
+}
+.banner-content a:hover::after{
+	border-color: aqua;
+	z-index: -1;
+	
+}
+
+
+
+
+
+/* banner css end */
+/* banner list css start */
+.stylish{
+	width: 100%;
+	margin:2rem 0px;
+	justify-content:space-evenly;
+}
+
+.stylishitem{
+	flex: 1 1 25%;
+	background: url(../images/pic2.jpg) no-repeat;
+	background-size: cover;
+	margin-right: 1rem;
+	padding: 4rem 0px;
+}
+
+.stylishitem div{
+	flex: 1 1 50%;
+}
+.stylishitem h3{
+	font-family:"Source Sans Pro", sans-serif;
+	font-weight:400;
+	font-size:18px;
+	color:#757575;
+}
+.stylishitem p{
+	margin-top: 0px;
+	font-family:Catamaran, sans-serif;
+	font-weight:600;
+	font-size:22px;
+	color:#000000;
+}
+.stylishitem a{
+	font-family:Catamaran, sans-serif;
+	font-weight:600;
+	font-size:14px;
+	color:#fb5c42;
+	text-decoration: underline;
+}
+	
+.bag{
+	background: url(../images/pic3.jpg) no-repeat;
+}
+
+.shoes{
+	background: url(../images/pic4.jpg) no-repeat;
+}
+
+/* banner list css start */
+
+
+/* mainbar css start */
+.main-bar{
+	width:100%;
+	background:yellow;
+	padding: 40px 0px;
+	text-align: center;
+}
+
+.main-bar h1{
+	font-family:Poppins, sans-serif;
+	font-size:38px;
+	font-weight: 600;
+	color:#000000;
+}
+.main-bar p{
+	font-family:"Source Sans Pro", sans-serif;
+	font-size:16px;
+	font-weight: 400;
+	color:#757575;
+}
+
+/* mainbar css end */
+
+
+
+/* new-arrivals part css start */
+.main-items{
+	width:100%;
+	justify-content:space-evenly;
+	padding:50px;
+}
+/* new-arrivals part css end */
+/* new-arrivals name part css start */
+.new-arrive-item{
+	margin: 1rem;
+	text-align: center;
+}
+.newarive-img{
+	position: relative;
+	transition: .2s linear;
+}
+.hover-img:hover{
+	opacity: 1;
+}
+.hover-img{
+	transition: .9s linear;
+	position: absolute;
+	top: 0px;
+	opacity: 0;
+}
+
+.hover-icon{
+	position: absolute;
+	top: 50%;
+	left: 30%;
+}
+.hover-icon a{
+	text-align: center;
+	color: #F0F1F5;
+	font-size: 2rem;
+	margin-left: 1rem;
+	background: #000000;
+	height: 3rem;
+	width: 3rem;
+	padding-top: .5rem;
+	border-radius: 50%;
+}
+.hover-icon a:hover{
+	background: #fb5c42;
+}
+
+
+
+.name-part{
+	width:100%;
+	height:100px;
+	background:red;
+	justify-content:space-evenly;
+	padding:50px;
+	text-align:center;
+}
+.Floral h3{
+	font-family:Catamaran, sans-serif;
+	font-size:18px;
+	font-weight: 600;
+	color:#000000;
+	text-align: center;
+}
+.Floral p{
+	font-family:"Source Sans Pro", sans-serif;;
+	font-size:18px;
+	font-weight: 400;
+	color:#777777;
+	text-align: center;
+}	
+.switer h3{
+	font-family:Catamaran, sans-serif;
+	font-size:18px;
+	font-weight: 600;
+	color:#000000;
+	text-align: center;
+}
+.switer p{
+	font-family:"Source Sans Pro", sans-serif;;
+	font-size:18px;
+	font-weight: 400;
+	color:#777777;
+	text-align: center;
+}	
+.trendy h3{
+	font-family:Catamaran, sans-serif;
+	font-size:18px;
+	font-weight: 600;
+	color:#000000;
+	text-align: center;
+}
+.trendy p{
+	font-family:"Source Sans Pro", sans-serif;;
+	font-size:18px;
+	font-weight: 400;
+	color:#777777;
+	text-align: center;
+}	
+.Frock h3{
+	font-family:Catamaran, sans-serif;
+	font-size:18px;
+	font-weight: 600;
+	color:#000000;
+	text-align: center;
+}
+.Frock p{
+	font-family:"Source Sans Pro", sans-serif;
+	font-size:18px;
+	font-weight: 400;
+	color:#777777;
+	text-align: center;
+}	
+/* new-arrivals name part css end */
+
+/* category part start */
+.category-items{
+	width:100%;
+	height:100%;
+	background:skyblue;
+	justify-content:space-evenly;
+}
+/* category part end */
+/* category name part start */
+.category-name{
+	width:100%;
+	height:150px;
+	background:red;
+	justify-content:space-evenly;
+}
+
+/* category name part end */
